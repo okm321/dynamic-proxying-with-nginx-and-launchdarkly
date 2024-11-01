@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y software-properties-common git \
 
 RUN cd /usr/lib && git clone https://github.com/launchdarkly/lua-server-sdk.git
 
-FROM openresty/openresty:jammy
+FROM openresty/openresty:1.25.3.2-0-jammy
 
 # {{ x-release-please-start-version }}
 ARG VERSION=2.1.1
